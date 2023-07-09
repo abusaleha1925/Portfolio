@@ -1,0 +1,159 @@
+<html>
+<head>
+  <title>Contact</title>
+  <meta charset="utf-8">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <style>
+    body {
+      text-align: center;
+      background-color: #CCD9ED;
+    }
+
+    button {
+      padding: 0.6em 2em;
+      border: none;
+      outline: none;
+      color: rgb(255, 255, 255);
+      background: #fa0505;
+      cursor: pointer;
+      position: relative;
+      left: 650px;
+      z-index: 0;
+      border-radius: 10px;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      display: flex;
+      margin: 30px;
+      width: 150px;
+      height: 70px;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 25px;
+      text-align: center;
+    }
+
+    button:hover {
+      box-shadow: 0px 0px 20px #fa0505;
+    }
+
+    button:before {
+      content: "";
+      background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      background-size: 400%;
+      z-index: -1;
+      filter: blur(5px);
+      -webkit-filter: blur(5px);
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      border-radius: 10px;
+    }
+
+    button:hover:before {
+      opacity: 1;
+    }
+
+    @keyframes glowing-button {
+      0% {
+        background-position: 0 0;
+      }
+      50% {
+        background-position: 400% 0;
+      }
+      100% {
+        background-position: 0 0;
+      }
+    }
+
+    button:after {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #222;
+      left: 0;
+      top: 0;
+      border-radius: 10px;
+    }
+
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .fa-instagram {
+      background: #d41cbb;
+      color: white;
+      width: auto;
+    }
+
+    .fa-linkedin {
+      background: #007bb5;
+      color: white;
+      width: auto;
+    }
+
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+      width: auto;
+    }
+
+    li {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 30px;
+    }
+
+    /* Responsive Styles */
+    @media screen and (max-width: 768px) {
+      button {
+        width: 70px;
+        height: 30px;
+        font-size: 12px;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      button {
+        width: 200px;
+        height: 80px;
+        font-size: 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1><b><u>Contact Details</u></b></h1>
+  <br>
+  
+  <li><b>Mobile Number </b>: +91 8217869749</li><br>
+  <li><b>E Mail </b>: abusaleha1925@gmail.com</li><br>
+  <li><b>Address </b>: 1111, 4th cross 4th main Tuda Layout Melekote Near SC/ST Girls Hostel, Tumkur</li>
+  
+  <br><br>
+  <a href="https://instagram.com/abu.sx1ehx" class="fa fa-instagram" target="_blank"></a>
+  <a href="https://twitter.com/_abu_saleha_?t=U-e8WL8-shGVQYFcQGeeiw&s=09" class="fa fa-twitter" target="_blank"></a>
+  <a href="https://www.linkedin.com/in/md-abu-saleha-a93353235" class="fa fa-linkedin" target="_blank"></a>
+
+  <button onclick="window.location.href='index.html'">Home</button>
+</body>
+</html>
